@@ -1,0 +1,36 @@
+{
+  "name": "cree",
+  "version": "0.0.1",
+  "description": "Cree is a modern toolbox that allows researchers to design and conduct economic experiments. Cree places very few restrictions on the devices facing subjects. Thus Cree experiments can be run in a myriad of settings, including laboratories, but also in extra-laboratory settings such as classrooms, workplaces, or over the Internet. Cree is a framework that provides the tools to handle many of the otherwise mundane, complicated or manually tasks required to set up and run economic experiments.",
+  "main": "cree.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsekamane/Cree.git"
+  },
+  "keywords": [
+    "experiments",
+    "economics",
+    "toolbox",
+    "multiplayer",
+    "continuous",
+    "real-time",
+    "simultaneous",
+    "interaction"
+  ],
+  "author": "Jonas K. Sekamane <lqf640@alumni.ku.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsekamane/Cree/issues"
+  },
+  "homepage": "https://github.com/jsekamane/Cree",
+  "dependencies": {
+    "cloak": "^1.0.0",
+    "connect": "^3.4.0",
+    "knuth-shuffle": "^1.0.1",
+    "ua-parser-js": "^0.7.7",
+    "underscore": "^1.8.3"
+  }
+}
