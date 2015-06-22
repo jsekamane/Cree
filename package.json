@@ -1,6 +1,6 @@
 {
   "name": "cree",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cree is a modern toolbox that allows researchers to design and conduct economic experiments.",
   "main": "cree.js",
   "scripts": {
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/jsekamane/Cree",
   "dependencies": {
     "cloak": "^1.0.0",
-    "connect": "^3.4.0",
+    "connect": "^2.9.2",
     "knuth-shuffle": "^1.0.1",
     "ua-parser-js": "^0.7.7",
     "underscore": "^1.8.3"
