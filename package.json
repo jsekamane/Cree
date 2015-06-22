@@ -1,6 +1,6 @@
 {
   "name": "cree",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Cree is a modern toolbox that allows researchers to design and conduct economic experiments.",
   "main": "cree.js",
   "scripts": {

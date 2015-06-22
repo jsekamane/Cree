@@ -1,0 +1,7 @@
+{
+  "name": "CreeEnglishAuction",
+  "description": "Example of an experiment in Cree. This experiment simply tests some of the possibilities available in Cree.",
+  "dependencies": {
+    "cree": "0.0.3"
+  }
+}

@@ -1,2 +1,8 @@
 # Ignore node.js modules
 node_modules/**
+
+# Ignore most files in the examples client folder
+examples/english-auction/client/**
+!examples/english-auction/client/experiment.js
+!examples/english-auction/client/experiment1_en/**
+examples/english-auction/node_modules/**

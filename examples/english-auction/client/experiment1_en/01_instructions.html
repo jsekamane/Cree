@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Experiment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Frameworks -->
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/underscore-min-1.7.0.js"></script>
+	<script src="../js/socket.io.min.js"></script>
+	<script src="../js/cloak-client.min.js"></script>
+	
+	<script src="../experiment.js"></script>
+</head>
+<body>
+<div class=".container-fluid" id="container">
+	
+	<section>
+		<div class="col-md-6 col-md-offset-3">
+			<div class="page-header"><h1>Instructions</h1></div>
+			<p class="lead">Please read the following instructions very carefully. It takes around 3-5 minutes to read, so please take your time.</p>
+			
+			<p>Today we are going to conduct a market in which all of you will be buyers. The commodity to be traded is divided into distinct items or "units". We will not specify a name for the commodity; we will simply refer to units.</p>
+			<p>Trading will occur in a sequence of periods. The prices that you negotiate in each trading period will determine your earnings, in kroner and øre. After the experiment has ended, I will draw periods at random and pay earnings in these two periods in cash.</p>
+			<p>We will proceed in the following way. First I will explain how buyers compute their earnings, and then I will explain how sales and purchases are arranged in the market. After reading the instructions and reviewing your specific information. Then we will begin the first trading period.</p>
+		
+			<h2>Buyer Profits</h2>
+			<p>Buyers earn money by purchasing units at prices that are below their values. Profits are computed by subtracting each unit’s purchase price from its value. Therefore,</p>
+			<p><samp>Your Earnings = Value of Unit – Purchase Price</samp></p>
+			<p>For example, the buyer record sheet above shows that the value of the first unit is $6.25, the value of the second unit is $5.05 and the value of the third unit is $3.00. If the first unit is bought at a price of $4.00, the second unit is bought at a price of $4.25, and the third unit is not bought, the buyer’s profits would be:</p>
+			<p>Buyer earnings from Period 1 are:</p>
+			<p><samp>
+				Unit 1	= $6.25 – $4.00 	= $2.25	(enter $2.25 in Row 1, Column 3) <br>
+				Unit 2	= $5.05 – $4.25 	= $0.80	(enter $0.80 in Row 2, Column 3) <br>
+				Unit 3	not bought	= $0	(enter $0.00 in Row 3, Column 3) <br>
+				Total Earnings in Period 1	= $3.05
+			</samp></p>
+		
+			<h2>Trading Rules</h2>
+			<p>I will begin each trading period with an announcement that the market is open. At any time during the period, any buyer is free to make a bid to buy a unit. All bids and offers pertain to a single unit, it is not possible to sell multiple units as a package.</p>
+			<p>All buyers have identification numbers. Your number is shown at the top.</p>
+			<p>All bids and asks must follow an improvement rule. All bids must be higher than the highest outstanding bid. In the example here, the next bid must be above $4.00.</p>
+		
+			<h2>Points to remember</h2>
+			<ul>
+				<li>Earnings in the examples above are for illustrative purposes only, your actual earnings may differ.</li>
+				<li>Do not assume that other participants have the same costs or values as you.</li>
+				<li>Buyers do not receive the value of a unit unless they purchase the unit.</li>
+			</ul>
+		
+			<hr>
+			
+			<p class="text-center"><a class="btn btn-primary next" href="#" role="button">Continue</a>
+		</div>
+	</section>
+	
+</div>
+</body>
+</html>

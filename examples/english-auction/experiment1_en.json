@@ -1,0 +1,78 @@
+{
+	"name": "CreeEnglishAuction",
+	"description": "Example of an experiment in Cree. This experiment simply tests some of the possibilities available in Cree.",
+	"version": "0.0.1",
+	"language": "en",
+	"author": {
+		"name": "Jonas K. Sekamane",
+		"url": "https://github.com/jsekamane"
+	},
+	"utilities": {
+		"front": "experiment1_en/00_frontpage.html",
+		"full": "experiment1_en/00_full.html",
+		"lobby": "experiment1_en/00_wait.html",
+		"decline": "experiment1_en/00_decline.html",
+		"fallback": "experiment1_en/00_fallback.html"
+	},
+	"stages": [
+		{
+			"name": "instructions", 
+			"url": "experiment1_en/01_instructions.html"
+		},
+		{
+			"name": "pre-questionnaire", 
+			"url": "experiment1_en/01_prequestionnarie.html"
+		},
+		{
+			"name": "wait",
+			"type": "sync",
+			"url": "experiment1_en/00_wait.html"
+		},
+		{
+			"name": "auction", 
+			"url": "experiment1_en/02_auction.html",
+			"script": "auction",
+			"method": "acrossRooms"
+		},
+		{
+			"name": "wait",
+			"type": "sync",
+			"url": "experiment1_en/00_wait.html"
+		},
+		{
+			"name": "auction", 
+			"url": "experiment1_en/02_auction.html",
+			"script": "auction"
+		},
+		{
+			"name": "post-questionnaire", 
+			"url": "experiment1_en/01_prequestionnarie.html"
+		},
+		{
+			"name": "payment", 
+			"url": "experiment1_en/03_payment.html",
+			"script": "payment",
+			"method": "perUser"
+		},
+		{
+			"name": "Randomise",
+			"type": "randomise",
+			"method": "acrossRooms"
+		},
+		{
+			"name": "thanks", 
+			"url": "experiment1_en/04_thanks.html"
+		}
+	],
+	"ExcludeIPs": [
+		"192.168.1.45"
+	],
+	"ExcludeDevices": [
+		{
+			"browser": {
+				"name": "IE",
+				"major": 9
+			}
+		}
+	]
+}

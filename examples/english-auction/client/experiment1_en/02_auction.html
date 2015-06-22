@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Experiment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Frameworks -->
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/underscore-min-1.7.0.js"></script>
+	<script src="../js/socket.io.min.js"></script>
+	<script src="../js/cloak-client.min.js"></script>
+	
+	<script src="../experiment.js"></script>
+</head>
+<body>
+<div class=".container-fluid" id="container">
+
+		<section class="game">
+			<div class="col-xs-12 text-right"><small class="remaining-time"><span></span> seconds remaining</small></div>
+		
+			<div class="col-sm-6">
+				<p class="price">The estimated price of the good is <strong>-</strong></p>
+				<p class="value">The value of the good for you is <strong>-</strong></p>
+			
+				<form id="input-form" novalidate class="ignore-form">
+					<div class="form-group" id="bid">
+						<label for="bid-input">Your bid:</label>
+						<input type="number" min="5" step="5" class="form-control" autofocus required autocomplete="off" id="bid-input" disabled />
+						<span class="help-block hide"><small>Your bid must be greater than or equal to <span class="bid-requirement">5</span>. Bids must also be increments of 5.</small></span>
+					</div>
+					<button type="submit" class="btn btn-primary">Bid</button>
+				</form>
+			</div>
+
+			<div class="col-sm-6">
+				<h3>Bids</h3>
+				<table class="table table-condensed" id="bids">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Buyer</th>
+							<th>Bid</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<section class="result hide">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="page-header"><h1>This round ended</h1></div>
+				<p class="price">The estimated price of the good is <strong>-</strong></p>
+				<p class="value">The value of the good for you is <strong>-</strong></p>
+				<p class="highest">The highest bid was <strong>-</strong></p>
+				<p class="no-bid hide">There was no bids</p>
+			
+				<p class="my-bid bg-success">You had the highest bid and won the good. Your bid was <strong>-</strong>.</p>
+				<p class="my-bid bg-warning">You did not have the highest bid and therefore did not win the good. <span>Your bid was <strong>-</strong>.</span></p>
+				<hr>
+				<p class="text-center"><a class="btn btn-primary next" href="#" role="button">Continue</a>
+			</div>
+		</section>
+	
+</div>
+</body>
+</html>

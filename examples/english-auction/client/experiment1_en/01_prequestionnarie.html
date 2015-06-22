@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Experiment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Frameworks -->
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/underscore-min-1.7.0.js"></script>
+	<script src="../js/socket.io.min.js"></script>
+	<script src="../js/cloak-client.min.js"></script>
+	
+	<script src="../experiment.js"></script>
+</head>
+<body>
+<div class=".container-fluid" id="container">
+	
+	<section>
+		<div class="col-md-6 col-md-offset-3">
+			<div class="page-header"><h1>Questionnaire</h1></div>
+			<p class="lead">This questionnaire will review your understanding of the instructions</p>
+			<!--<nav>
+			  <ul class="pager">
+			    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Instructions</a></li>
+			  </ul>
+			</nav>-->
+			
+			<form id="input-form" class="form-inline">
+				
+				<fieldset>
+					<legend>How much is the final price that Bidder 1 pays in the end?</legend>
+					<p class="text-muted">Hint: He pays the price and then receives the price adjustment.</p>
+					He pays 
+					<div class="input-group input-sm"><div class="input-group-addon">£</div><input type="text" class="form-control" id="exampleInputAmount1" name="exampleInputAmount1" placeholder="Amount" required></div> 
+					as the price for 
+					<strong>A</strong> and receives 
+					<div class="input-group input-sm"><div class="input-group-addon">£</div><input type="text" class="form-control" id="exampleInputAmount2" name="exampleInputAmount2" placeholder="Amount" required></div> 
+					as the price adjustment.<br>					
+					Thus, Bidder 1's final price is 
+					<div class="input-group input-sm"><div class="input-group-addon">£</div><input type="text" class="form-control" id="exampleInputAmount3" name="exampleInputAmount3" placeholder="Amount" required></div> 
+					minus 
+					<div class="input-group input-sm"><div class="input-group-addon">£</div><input type="text" class="form-control" id="exampleInputAmount4" name="exampleInputAmount4" placeholder="Amount" required></div> 
+					which equals 
+					<div class="input-group input-sm"><div class="input-group-addon">£</div><input type="text" class="form-control" id="exampleInputAmount5" name="exampleInputAmount5" placeholder="Amount" required></div>
+					<p>Fill in the blanks.</p>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Which of the following is true?</legend>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" required>
+					    My value of AB is more than the sum of my values of A and B.
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" required>
+					    My value of CD is more than the sum of my values of C and D.
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" required>
+					    Any package that contains AB is worth more to me than any package that does not contain
+						AB.
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" required>
+					    None of the above
+					  </label>
+					</div>
+				</fieldset>
+
+				<hr>				
+				<p class="text-center"><input type="submit" class="btn btn-primary next" value="Continue" /></p>
+		
+			</form>		
+		</div>
+	</section>
+	
+</div>
+</body>
+</html>
