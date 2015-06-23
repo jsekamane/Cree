@@ -69,20 +69,19 @@
 		
 			<div class="col-md-6 col-md-offset-3">
 				<div class="page-header"><h1>Choose a split</h1></div>
-			
-				<form id="input-form" novalidate class="ignore-form form-inline">
 
+				
+				<form id="input-form" novalidate class="ignore-form">
 					<div id="slider">
-						<div class="form-group">
-							<label for="slide">0</label>
-							<input id="slide" type="range" min="0" max="100" step="1" value="50" class="form-control" onchange="$('.help span').text(value.toString())" data-toggle="tooltip" data-placement="top" />
-							<label for="slide">100</label>
-						</div>
+						<div class="col-xs-1"><label for="slide">0</label></div>
+						<div class="col-xs-10"><input id="slide" type="range" min="0" max="100" step="1" value="50" class="form-control" onchange="$('.help span').text(value.toString())" /></div>
+						<div class="col-xs-1"><label for="slide">100</label></div>
 					</div>
 					<div class="help">Your share: <span>50</span></div>
 					<hr>
 					<button type="submit" class="btn btn-primary">Continue</button>
 				</form>
+				
 			</div>
 
 		</section>
