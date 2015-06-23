@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Experiment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Frameworks -->
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/underscore-min-1.7.0.js"></script>
+	<script src="../js/socket.io.min.js"></script>
+	<script src="../js/cloak-client.min.js"></script>
+	
+	<script src="../experiment.js"></script>
+</head>
+<body>
+<div class=".container-fluid" id="container">
+	
+	<section>
+		<div class="col-md-6 col-md-offset-3">
+			<div class="page-header"><h1>Your earnings</h1></div>
+			<p class="lead earnings">We have calculated your earnings based on your performance in the previous rounds. You have earned <strong>DKK -</strong>. <span>Please specify how we should transfer the amount to you.</span></p>
+			
+			<form id="input-form" class="form-inline">
+				
+				<div class="btn-group payment" data-toggle="buttons">
+				  <label class="btn btn-primary">
+				    <input type="radio" name="paypotion" id="option1" value="option_MobilePay"> MobilePay
+				  </label>
+				  <label class="btn btn-primary">
+				    <input type="radio" name="paypotion" id="option2" value="option_Swipp"> Swipp
+				  </label>
+				  <label class="btn btn-primary">
+				    <input type="radio" name="paypotion" id="option3" value="option_PayPal"> PayPal
+				  </label>
+				</div>
+				
+				<fieldset class="option1 hide">
+					<hr>
+					<p>You have selected MobilePay. Please enter your mobile phone number.</p>
+					<div class="form-group">
+					    <label for="mobile_MobilePay">Mobile phone number</label>
+						<div class="input-group">
+							<div class="input-group-addon">+45</div>
+					    	<input type="tel" class="form-control" id="mobile_MobilePay" name="mobile_MobilePay" placeholder="Enter number">
+						</div>
+					 </div>
+					<hr>				
+					<p class="text-center"><input type="submit" class="btn btn-primary next" value="Finish" /></p>
+				</fieldset>
+				
+				<fieldset class="option2 hide">
+					<hr>
+					<p>You have selected Swipp. Please enter your mobile phone number.</p>
+					<div class="form-group">
+					    <label for="mobile_Swipp">Mobile phone number</label>
+						<div class="input-group">
+							<div class="input-group-addon">+45</div>
+					    	<input type="tel" class="form-control" id="mobile_Swipp" name="mobile_Swipp" placeholder="Enter number">
+						</div>
+					 </div>
+					<hr>				
+					<p class="text-center"><input type="submit" class="btn btn-primary next" value="Finish" /></p>
+				</fieldset>
+				
+				<fieldset class="option3 hide">
+					<hr>
+					<p>You have selected PayPal. Please enter your PayPal e-mail address.</p>
+					<div class="form-group">
+					    <label for="email">E-mail</label>
+					    <input type="email" class="form-control" id="mobile_Swipp" name="mobile_Swipp" placeholder="Enter e-mail">
+					 </div>
+					<hr>				
+					<p class="text-center"><input type="submit" class="btn btn-primary next" value="Finish" /></p>
+				</fieldset>
+				
+				<fieldset class="nooption hide">
+					<hr>				
+					<p class="text-center"><a class="btn btn-primary next" href="#" role="button">Finish</a>
+				</fieldset>
+		
+			</form>
+		
+		</div>
+	</section>
+	
+</div>
+</body>
+</html>

@@ -6,3 +6,9 @@ examples/english-auction/client/**
 !examples/english-auction/client/experiment.js
 !examples/english-auction/client/experiment1_en/**
 examples/english-auction/node_modules/**
+
+examples/dictator-game/client/**
+!examples/dictator-game/client/index.html
+!examples/dictator-game/client/experiment.js
+!examples/dictator-game/client/dictator1/**
+examples/dictator-game/node_modules/**

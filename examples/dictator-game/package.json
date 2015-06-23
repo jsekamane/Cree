@@ -1,0 +1,7 @@
+{
+  "name": "CreeDictatorGame",
+  "description": "Example of an experiment in Cree. An example of the very simple Dictator game.",
+  "dependencies": {
+    "cree": "0.0.3"
+  }
+}

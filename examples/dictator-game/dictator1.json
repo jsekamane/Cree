@@ -1,0 +1,61 @@
+{
+	"name": "CreeDictatorGame",
+	"description": "Example of an experiment in Cree. An example of the very simple Dictator game.",
+	"version": "0.0.1",
+	"language": "en",
+	"author": {
+		"name": "Jonas K. Sekamane",
+		"url": "https://github.com/jsekamane"
+	},
+	"utilities": {
+		"full": "dictator1/00_full.html",
+		"lobby": "dictator1/00_wait.html",
+		"decline": "dictator1/00_decline.html",
+		"fallback": "dictator1/00_fallback.html"
+	},
+	"stages": [
+		{
+			"name": "instructions", 
+			"url": "dictator1/01_instructions.html"
+		},
+		{
+			"name": "wait",
+			"type": "sync",
+			"url": "dictator1/00_wait.html"
+		},
+		{
+			"name": "dictator", 
+			"url": "dictator1/02_dictator.html",
+			"script": "dictator",
+			"method": "withinRooms"
+		},
+		{
+			"name": "wait",
+			"type": "sync",
+			"url": "dictator1/00_wait.html"
+		},
+		{
+			"name": "Randomise",
+			"type": "randomise",
+			"method": "withinRooms"
+		},
+		{
+			"name": "dictator", 
+			"url": "dictator1/02_dictator.html",
+			"script": "dictator",
+			"method": "withinRooms"
+		},
+		{
+			"name": "payment", 
+			"url": "dictator1/03_payment.html",
+			"script": "payment",
+			"method": "perUser"
+		},
+		{
+			"name": "thanks", 
+			"url": "dictator1/04_thanks.html"
+		}
+	],
+	"ExcludeIPs": [],
+	"ExcludeDevices": []
+}
